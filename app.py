@@ -13,7 +13,7 @@ def motor():
     return msg
 
 @app.route("/motor/stop")
-def motor():
+def stop():
     explorerhat.motor.one.stop()
     explorerhat.motor.two.stop()
     return "Stop all motors"
